@@ -1,5 +1,4 @@
 # c
-c 
 c basic programs 
 basic programs builds a strong c developer 
 #learning c
