@@ -1,0 +1,30 @@
+#include <stdio.h>
+int search(int,int*,int);
+int main()
+{
+    int n,a[50],key,i;
+    int *ptr;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    ptr=a;
+    scanf("%d",&key);
+    search(n,a,key);
+    return 0;
+}
+int search(int n,int* a,int key)
+{
+    int i;
+    for(i=0;i<n;i++)
+    {
+        if(a[i]==key)
+        {
+        printf("found");
+        break;
+    }
+    }
+    if(i==n)
+    printf("Not found");
+}
